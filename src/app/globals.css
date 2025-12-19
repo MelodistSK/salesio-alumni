@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 45, 55, 72;
+  --background-rgb: 247, 246, 243;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* ドラッグ中のスタイル */
+.dragging {
+  opacity: 0.8;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* ページゲージ */
+.page-gauge {
+  transition: width 0.3s ease;
+}
+
+/* カラーページインジケーター */
+.color-page-indicator {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 2px dashed #d69e2e;
+}

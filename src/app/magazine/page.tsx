@@ -137,9 +137,9 @@ function SortableItem({
 
           {/* ページ数調整 */}
           <div className="flex items-center gap-1 bg-gray-50 rounded-lg p-1">
-            <button
-              onClick={() => onPageChange(content.id, -0.2)}
-              disabled={content.pages <= 0.2}
+           <button
+              onClick={() => onPageChange(content.id, -0.1)}
+              disabled={content.pages <= 0.1}
               className="p-1.5 rounded hover:bg-gray-200 disabled:opacity-30 disabled:cursor-not-allowed"
             >
               <Minus size={16} />
@@ -148,7 +148,7 @@ function SortableItem({
               {content.pages.toFixed(1)}P
             </span>
             <button
-              onClick={() => onPageChange(content.id, 0.2)}
+              onClick={() => onPageChange(content.id, 0.1)}
               className="p-1.5 rounded hover:bg-gray-200"
             >
               <Plus size={16} />
@@ -356,7 +356,7 @@ export default function MagazinePage() {
     const content = contents.find((c) => c.id === id);
     if (!content) return;
 
-    const newPages = Math.max(0.2, Math.round((content.pages + delta) * 10) / 10);
+    const newPages = Math.max(0.1, Math.round((content.pages + delta) * 10) / 10);
     handleUpdate(id, { pages: newPages });
   }
 

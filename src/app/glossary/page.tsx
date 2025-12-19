@@ -51,7 +51,7 @@ export default function GlossaryPage() {
   });
 
   // カテゴリ別にグループ化
-  const categories = [...new Set(terms.map((t) => t.category))];
+  const categories = Array.from(new Set(terms.map((t) => t.category)));
 
   if (loading) {
     return (

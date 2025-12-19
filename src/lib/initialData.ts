@@ -237,7 +237,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '活躍している同窓生',
-    pages: 2.0,
+    pages: 3.0,
     deadline: '2025-02-28',
     assignee: 'さとみ先生',
     status: 'not-started',
@@ -252,7 +252,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '20歳の集い',
-    pages: 0.5,
+    pages: 1.0,
     deadline: '2025-02-28',
     assignee: 'さとみ先生',
     status: 'not-started',
@@ -265,7 +265,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '30歳の集い',
-    pages: 0.5,
+    pages: 1.0,
     deadline: '2025-02-28',
     assignee: 'さとみ先生',
     status: 'not-started',
@@ -278,7 +278,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '同窓会やりました',
-    pages: 0.5,
+    pages: 1.0,
     deadline: '2025-02-28',
     assignee: 'さとみ先生',
     status: 'not-started',
@@ -291,7 +291,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '新年の集い',
-    pages: 0.5,
+    pages: 1.0,
     deadline: '2025-02-28',
     assignee: 'さとみ先生',
     status: 'not-started',
@@ -304,7 +304,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '総会報告＋サレジオ会100周年',
-    pages: 0.5,
+    pages: 1.0,
     deadline: '2025-02-28',
     assignee: 'さとみ先生',
     status: 'not-started',
@@ -317,7 +317,7 @@ export const initialMagazineContents: Omit<MagazineContent, 'id'>[] = [
   },
   {
     title: '会計報告・予算・活動報告',
-    pages: 1.0,
+    pages: 2.0,
     deadline: '2025-02-28',
     assignee: '役員',
     status: 'not-started',
